@@ -24,11 +24,3 @@ resource "azurerm_storage_container" "idc-hack-sc" {
   storage_account_name  = var.storage_account_name
   container_access_type = var.container_access_type
 }
-
-resource "azurerm_storage_blob" "idc-hack-sb" {
-  name                   = "my-awesome-content.zip"
-  storage_account_name   = azurerm_storage_account.example.name
-  storage_container_name = azurerm_storage_container.example.name
-  type                   = "Block"
-  source                 = "some-local-file.zip"
-}
