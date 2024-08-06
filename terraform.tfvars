@@ -1,0 +1,7 @@
+ resource_group_name  = "test-idc-rg-eastus-test-idc-rg"
+ location = "West US 2"
+ storage_account_name = "test-idc-storage"
+ account_tier="Standard"
+ account_replication_type="LRS"
+ container_name = "test-idc-container"
+ container_access_type= "Private"
